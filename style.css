@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(43, 41, 41);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+}
+
+.ll1 {
+  font-size: xx-large;
+}
+
+.rr1 {
+  width: 50%;
+}
+
+.rr1 ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.rr1 ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.rr1 ul a:hover,
+.mre:hover {
+  color: rgb(174, 168, 168);
+}
+
+.hmImg {
+  height: 30px;
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+.hmbgr {
+  position: absolute;
+  right: 30px;
+  display: none;
+}
+
+.hmbgr-cont {
+  background-color: rgb(43, 41, 41);
+  width: 100%;
+  padding-bottom: 20px;
+  display: none;
+}
+
+.hmbgr-cont-bl {
+  display: block;
+}
+
+.hmbgr-cont ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+}
+
+.hmbgr-cont ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.hmbgr-cont ul a:hover,
+.mre:hover {
+  color: rgb(174, 168, 168);
+}
+
+.name {
+  color: red;
+}
+
+.and {
+  color: grey;
+}
+
+.cnt {
+  height: auto;
+}
+
+.main-dtl {
+  width: 80%;
+  height: 600px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+
+.left-dtl {
+  width: 500px;
+  height: 270px;
+  border-radius: 1em;
+  box-shadow: 0 0 40px rgb(238 238 238 / 50%);
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-dtl {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.ic-up {
+  width: 40px;
+  height: 40px;
+}
+
+#scrollToTopButton {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#scrollToTopButton.show {
+  display: block;
+}
+
+#scrollToTopButton.hide {
+  animation: fadeOut 0.3s ease;
+}
