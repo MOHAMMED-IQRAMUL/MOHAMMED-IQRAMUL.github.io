@@ -1,0 +1,68 @@
+.left-dtl h3 {
+  position: relative;
+  animation: slideInBack 1s ease forwards;
+}
+.name {
+  position: relative;
+  animation: slideIn 1s ease forwards;
+}
+.welc {
+  position: relative;
+  animation: slideIn 1s ease forwards;
+}
+.b-to-top {
+  position: relative;
+  animation: slideInUp 1s ease forwards;
+}
+.b-to-down {
+  position: relative;
+  animation: slideInDown 1s ease forwards;
+}
+.left-dtl:nth-child(1),
+.imgha {
+  position: relative;
+  animation: slideInDown 1s ease forwards;
+}
+@keyframes slideIn {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slideInBack {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes slideInDown {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -68,6 +68,57 @@
   }
   .contact-div {
     width: 95%;
-  padding: 50px 20px;
+    padding: 50px 20px;
+  }
+  .u-cnt {
+    flex-direction: column;
+  }
+  .lr-cnt,
+  .rr-cnt {
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) {
+  .l2-cont {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .l2-cont {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .self {
+    flex-direction: row;
+    align-items: start;
+    box-shadow: 0px 0px 10px 2px #ffffff;
+    border-radius: 10px;
+    margin: 10px auto;
+  }
+
+  .project {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .project-cnt {
+    width: 80%;
+  }
+  .self {
+    flex-direction: row;
+    align-items: start;
+    box-shadow: 0px 0px 10px 2px #ffffff;
+    border-radius: 10px;
+    margin: 15px auto;
+  }
+  .project {
+    width: 500px;
   }
 }

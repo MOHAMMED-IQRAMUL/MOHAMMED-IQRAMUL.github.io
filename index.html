@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
+
+    <meta charset="UTF-8">
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-12PPYQV69C"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -11,7 +13,7 @@
 
         gtag('config', 'G-12PPYQV69C');
     </script>
-    <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IQRAMUL</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,22 +22,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="set.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="animations.css">
 
+    <style>
 
+    </style>
 </head>
 
 <body>
     <nav>
         <div class="ll1 welc" id="top">WELCOME</div>
-        <div class="ll1" id="top">
-
-        </div>
-
         <div class="rr1">
             <ul>
-                <li><a href="#Abm234" class="smooth-scroll b-to-top">About Me</a></li>
-                <li><a href="#Skill" class="smooth-scroll b-to-down">Skill</a></li>
+                <li><a href="#Abm234" class="smooth-scroll   b-to-top">About Me</a></li>
+
                 <li><a href="#prj" class="smooth-scroll b-to-top">Projects</a></li>
                 <li><a href="#contact" class="smooth-scroll b-to-down">Contact Me</a> </li>
             </ul>
@@ -47,10 +47,10 @@
             </div>
         </div>
     </nav>
+
     <div class="hmbgr-cont">
         <ul>
             <li><a href="#Abm234" class="smooth-scroll">About Me</a></li>
-            <li><a href="#Skill" class="smooth-scroll">Skill</a></li>
             <li><a href="#prj" class="smooth-scroll">Projects</a></li>
             <li><a href="#contact" class="smooth-scroll">Contact Me</a> </li>
         </ul>
@@ -60,7 +60,7 @@
 
     <main>
 
-        <div class="cnt bd ">
+        <div class="cnt">
 
             <div class="main-dtl">
                 <div class="left-dtl">
@@ -71,10 +71,10 @@
                     <h3>Software Engineer</h3>
                     <h4 class="and">and a </h4>
                     <h3>Passionate Full Stack Web Developer</h3>
+                    <div class="cv"><a href="cv.pdf" download="CV.pdf">Download My CV</a></div>
                 </div>
-                <img class="right-dtl imgha" src="assets/img-prf1.jpg" alt="MOHAMMEDIQRAMUL">
+                <img class="right-dtl" src="assets/img-prf1.jpg" alt="">
             </div>
-
 
             <div class="aboutme">
                 <div class="abnm">
@@ -110,7 +110,7 @@
                                     <li>Java, JavaScript, Python</li>
                                     <li>Data Structures with C++, Algorithms with Java</li>
                                     <li>SQL-PL/SQL (MYSQL, Oracle)</li>
-                                    <li>Oracle Database</li>
+                                    <li>Oracle Database, MongoDB(Mongoose)</li>
                                     <li>Android Development (utilizing Kotlin and Jetpack Compose)</li>
                                 </ul>
                             </div>
@@ -125,11 +125,14 @@
                                     <li>Frontend technologies: HTML, CSS, JavaScript, React</li>
                                     <li>Backend Technologies: NodeJS, ReactJS, NextJS
                                     </li>
-                                    <li>Database: MongoDB, Mongoose
+                                    <li>Database: MongoDB, Mongoose, Firebase
                                     </li>
                                     <li>API: Express, Postman
                                     </li>
-                                    <li>Frameworks: Tailwind CSS</li>
+                                    <li>Frameworks: Tailwind CSS, Material UI</li>
+                                    <li>Authentication: Firebase, Clerk</li>
+                                    <li>Version Control: Git, GitHub</li>
+                                    <li>Deployments: Netlify, Vercel</li>
                                 </ul>
                             </div>
                         </div>
@@ -138,56 +141,201 @@
 
             </div>
 
+           
+
+            <div id="prj" class="prj Projects">
+
+                <div class="project-name">Projects</div>
+
+                <div class="project-cnt">
+
+                    <div class="topic">Self</div>
+
+                    <div class="self">
+                        <div class="project Calender">
+                            <h3 class="hd">Calender Project</h3>
+                            <h3>A simple and dynamic calendar created using HTML, CSS, and JavaScript.</h3>
+                            <h4>Overview</h4>
+                            <p>
+                                This project showcases a dynamic calendar that allows users to Access the Calender.
+                            </p>
+                            <h4>Features</h4>
+                            <ul>
+
+                                <li>Dynamic</li>
+                                <li>Responsive</li>
+                                <li>User Friendly</li>
+                            </ul>
+
+                            <a href="https://github.com/MOHAMMED-IQRAMUL/CALENDER">GitHub Repo</a>
+                            <a href="https://calender-iqramul.netlify.app/" target="_blank" rel="noopener">Live Demo</a>
+                        </div>
+                        <div class="project Todo">
+                            <h3 class="hd">React TodoList App</h3>
+                            <h3>React TodoList application using React, Tailwind CSS, and React Icons.</h3>
+                            <h4>Overview</h4>
+                            <p>
+                                This project showcases a simple React Todolist app which can be used as Notepad.
+                            </p>
+                            <h4>Features</h4>
+                            <ul>
+
+                                <li>Simple TodoList App</li>
+                                <li>Responsive</li>
+                                <li>Managing List with Local Storage</li>
+                            </ul>
+                            <a href="https://github.com/MOHAMMED-IQRAMUL/TODO-APP">GitHub Repo</a>
+                            <a href="https://iq-task.netlify.app/" target="_blank" rel="noopener">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="headstarter-topic topic">
+                        At Headstarter
+
+                    </div>
+
+                    <div class="headstarter self">
 
 
+                        <div class="project Smart Inventory Management">
+                            <h3>Week-2 Project-2</h3>
+                            <h3 class="hd">Smart Inventory Management</h3>
+                            <h3>Next Js, Clean CRUD app using Firebase </h3>
+                            <h4>Overview</h4>
+                            <p>
+                                This project showcases a Smart Inventory Management
+                                on Which we can add, remove, edit and delete Items.We can also search for recepie based
+                                on item available in our Inventory
+                            </p>
+                            <h4>Features</h4>
+                            <ul>
 
+                                <li>Fast</li>
+                                <li>Responsive</li>
+                                <li>AI Support</li>
+                            </ul>
 
-            <div id="contact">
+                            <a href="https://github.com/MOHAMMED-IQRAMUL/Smart-Inventory">GitHub Repo</a>
+                            <a href="https://smart-inventory-six.vercel.app/" target="_blank" rel="noopener">Live
+                                Demo</a>
+                        </div>
+
+                        <div class="project AI Chat Support">
+                            <h3>Week-3 Project-3</h3>
+                            <h3 class="hd">AI Chat Support</h3>
+                            <h3>Simple Chat Bot using Openrouter Lamma-3 model</h3>
+                            <h4>Overview</h4>
+                            <p>
+                                The AI Support Buddy is an AI-powered assistant designed to help users with various
+                                inquiries and tasks
+                            </p>
+                            <h4>Features</h4>
+                            <ul>
+
+                                <li>DYNAMIC</li>
+                                <li>RESPONSIVE</li>
+                                <li>USER FRIENDLY</li>
+                            </ul>
+
+                            <a href="https://github.com/MOHAMMED-IQRAMUL/AI-CHAT-SUPPORT">GitHub Repo</a>
+                            <a href="https://ai-support-buddy.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
+                        </div>
+
+                        <div class="project AI Flashcard Generater">
+                            <h3>Week-4 Project-4</h3>
+                            <h3 class="hd">AI Flashcard Generator</h3>
+                            <h3>Next.js, Firebase, Clerk, Stripe, Material UI</h3>
+                            <h4>Overview</h4>
+                            <p>
+                                FlashLearn is an AI-powered flashcard generation web application that allows users to
+                                create, store, and review flashcards.
+                            </p>
+                            <h4>Features</h4>
+                            <ul>
+
+                                <li>Generate Flashcards</li>
+                                <li>User Authentication</li>
+                                <li>Save and View Flashcards</li>
+                            </ul>
+
+                            <a href="https://github.com/MOHAMMED-IQRAMUL/AI-FLASHCARD-GENERATOR">GitHub Repo</a>
+                            <a href="https://aiflashlearn.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="contact" id="contact">
                 <p class="qwe">Contact <span class="mee">Me</span></p>
 
                 <div class="contact-div">
+
                     <div class="l1-cont">
-                        <div class="l1-cont-img"><img src="assets/img-prf1.jpg" alt="Profile-Img MOHAMMEDIQRAMUL"></div>
+                        <div class="l1-cont-img"><img src="assets/img-prf1.jpg" alt="Profile-Img"></div>
                         <h4>MOHAMMED IQRAMUL</h4>
                     </div>
-                    <div class="l2-cont">
-                        <div class="l2-URLS">
-                            <img src="assets/LinkedIn.svg" alt="LinkedIn">
+
+                    <div class="l2-cont ">
+                        <div class="l2-urls l2-01 ">
                             <a href="https://www.linkedin.com/in/mohammed-iqramul/">
-                                <h4 class="l2-url-name">mohammed-iqramul</h4>
-                            </a>
+                                <img src="assets/LinkedIn.svg" alt="LinkedIn"></a>
+
                         </div>
 
-                        <div class="l2-URLS">
-                            <img src="assets/Github.svg" alt="GitHub">
+                        <div class="l2-urls l2-02">
                             <a href="https://github.com/MOHAMMED-IQRAMUL">
-                                <h4 class="l2-url-name">MOHAMMED-IQRAMUL</h4>
+                                <img src="assets/Github.svg" alt="GitHub">
+
                             </a>
+
+
                         </div>
 
-                        <div class="l2-URLS">
-                            <img src="assets/LeetCode.svg" alt="LeetCode">
+                        <div class="l2-urls l2-03">
                             <a href="https://leetcode.com/MOHAMMED-IQRAMUL/">
-                                <h4 class="l2-url-name">MOHAMMED-IQRAMUL</h4>
+                                <img src="assets/LeetCode.svg" alt="LeetCode">
+
                             </a>
                         </div>
 
-                        <div class="l2-URLS">
-                            <img width="30px" src="assets/hackerrank.png" alt="HackerRank">
+                        <div class="l2-urls l2-04">
+                            <a href="https://codeforces.com/profile/MOHAMMED-IQRAMUL">
+                                <img src="assets/codeforces.png" alt="CodeForces">
+
+                            </a>
+                        </div>
+
+                        <div class="l2-urls l2-05">
+                            <a href="https://www.geeksforgeeks.org/user/rapp7o1o">
+                                <img src="assets/gfg.svg" alt="GFG">
+
+                            </a>
+                        </div>
+
+                        <div class="l2-urls l2-06">
                             <a href="https://www.hackerrank.com/profile/MOHAMMED_IQRAMUL">
-                                <h4 class="l2-url-name"> MOHAMMED_IQRAMUL</h4>
+                                <img src="assets/hackerrank.png" alt="HackerRank">
+
                             </a>
                         </div>
 
+                        <div class="l2-urls l2-07 hds">
+                            <a href="https://app.theheadstarter.com/profile/mohammed-iqramul">
+                                <img src="assets/headstarter.png" alt="Headstarter">
 
-                    </div>
-                    <div class="l3-cont">
-
-                        <div class="l3-URLS">
-                            <img width="30px" src="assets/gmail.ico" alt="Gmail">
-                            <a href="mailto:rappidf@gmail.com">
-                                <h4 class="l3-url-name">Gmail</h4>
                             </a>
+                        </div>
+
+                        <div class="l2-urls l2-08">
+                            <a href="mailto:mohdiqramul2468@gmail.com">
+                                <img src="assets/gmail.ico" alt="Gmail">
+
+                            </a>
+
+
                         </div>
 
 
@@ -195,47 +343,57 @@
 
                     </div>
 
+
+
+
+
                 </div>
+
+            </div>
+            <div class="sec-1234">
+                <div class="scrolling-text divs">
+                    <span class="text-duplicate">
+                        <img src="https://skillicons.dev/icons?i=c,cpp,java,py,kotlin,androidstudio,aws,bash,bootstrap,cloudflare,html,css,js,discord,	django,	docker,	dotnet,	express,	figma,	firebase,	flask,git	,github,githubactions,	gitlab	,gmail	,ai	,instagram,kubernetes,laravel	,linkedin,	linux,md,materialui,matlab,mongodb,	mysql	,netlify,nextjs	,nginx	,nim	,nix,nodejs,notion,npm	,opencv,php	,	postgres,postman,powershell,pycharm,py	,pytorch,react,reactivex,regex,replit	,sass,spring,sqlite	,stackoverflow,svg,tailwind,tensorflow,twitter,ts,ubuntu,vercel,visualstudio,vite,vscode,vue,vuetify,windows,wordpress,
+                        
+                        " /alt="icon"></span>
+                    <span class="text-duplicate">
+                        <img src="https://skillicons.dev/icons?i=c,cpp,java,py,kotlin,androidstudio,aws,bash,bootstrap,cloudflare,html,css,js,discord,	django,	docker,	dotnet,	express,	figma,	firebase,	flask,git	,github,githubactions,	gitlab	,gmail	,ai	,instagram,kubernetes,laravel	,linkedin,	linux,md,materialui,matlab,mongodb,	mysql	,netlify,nextjs	,nginx	,nim	,nix,nodejs,notion,npm	,opencv,php	,	postgres,postman,powershell,pycharm,py	,pytorch,react,reactivex,regex,replit	,sass,spring,sqlite	,stackoverflow,svg,tailwind,tensorflow,twitter,ts,ubuntu,vercel,visualstudio,vite,vscode,vue,vuetify,windows,wordpress,
+                        
+                        " /alt="icon"></span>
+                    <span class="text-duplicate">
+                        <img src="https://skillicons.dev/icons?i=c,cpp,java,py,kotlin,androidstudio,aws,bash,bootstrap,cloudflare,html,css,js,discord,	django,	docker,	dotnet,	express,	figma,	firebase,	flask,git	,github,githubactions,	gitlab	,gmail	,ai	,instagram,kubernetes,laravel	,linkedin,	linux,md,materialui,matlab,mongodb,	mysql	,netlify,nextjs	,nginx	,nim	,nix,nodejs,notion,npm	,opencv,php	,	postgres,postman,powershell,pycharm,py	,pytorch,react,reactivex,regex,replit	,sass,spring,sqlite	,stackoverflow,svg,tailwind,tensorflow,twitter,ts,ubuntu,vercel,visualstudio,vite,vscode,vue,vuetify,windows,wordpress,
+                        
+                        " /alt="icon"></span>
+                </div>
+
             </div>
 
-            <div class="wait">
-                <div class="popppo">
-                    <div id="prj">
-                        Projects
-                    </div>
-
-                    <div id="Skill">
-                        Skills
-                    </div>
-                </div>
-                <div class="llll">
-                    <p class="paras">C</p>
-                    <p class="paras">O</p>
-                    <p class="paras">M</p>
-                    <p class="paras">M</p>
-                    <p class="paras">I</p>
-                    <p class="paras">N</p>
-                    <p class="paras">G</p>
-                    <p class="paras">S</p>
-                    <p class="paras">O</p>
-                    <p class="paras">O</p>
-                    <P class="paras">N</P>
-                </div>
-            </div>
         </div>
-
-
-
-
-        <button type="button" id="scrollToTopButton" onclick="scrollToTop()"><lord-icon class="ic-up"
-                src="https://cdn.lordicon.com/dwoxxgps.json" trigger="hover" colors="primary:#ffffff">
-            </lord-icon>.</button>
 
     </main>
 
-    <footer>
+    <footer class="footer">
+        <div class="container">
 
+            <div class="footer-section">
+                <h4>Follow Me</h4>
+                <ul class="social-links">
+                    <li><a href="https://github.com/MOHAMMED-IQRAMUL" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/mohammed-iqramul/" target="_blank"
+                            rel="noopener">LinkedIn</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mohammed Iqramul. All Rights Reserved.</p>
+        </div>
+        </div>
     </footer>
+    <button type="button" id="scrollToTopButton" onclick="scrollToTop()"><lord-icon class="ic-up"
+            src="https://cdn.lordicon.com/dwoxxgps.json" trigger="hover" colors="primary:#ffffff">
+        </lord-icon>.</button>
+
 
 
     <script src="app.js"></script>
