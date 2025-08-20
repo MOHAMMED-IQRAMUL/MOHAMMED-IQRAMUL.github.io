@@ -483,20 +483,16 @@ main {
 
 .preview a {
   display: inline-block;
-  /* padding: 12px 20px; */
+  padding: 12px 20px;
   background: #000;  /* black theme */
   color: #fff;       /* white text */
   font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
+  border-radius:15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   transition: all 0.3s ease;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  overflow: hidden;
-  background-color: antiquewhite;
 }
 
 /* Hover effect */
@@ -505,8 +501,4 @@ main {
   color: #000;
   border: 2px solid #000;
   transform: scale(1.05);
-  width: auto;
-  height: auto;
-  border-radius:10px;
-  padding: 12px 20px;
 }
