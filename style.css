@@ -474,4 +474,39 @@ main {
   animation: fadeOut 0.3s ease;
 }
 
-/* Scroll To Top Button  */
+.preview {
+  position: fixed; 
+  top: 100px; 
+  right: 10px; 
+  z-index: 1000;
+}
+
+.preview a {
+  display: inline-block;
+  /* padding: 12px 20px; */
+  background: #000;  /* black theme */
+  color: #fff;       /* white text */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: antiquewhite;
+}
+
+/* Hover effect */
+.preview a:hover {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+  transform: scale(1.05);
+  width: auto;
+  height: auto;
+  border-radius:10px;
+  padding: 12px 20px;
+}
