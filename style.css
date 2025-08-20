@@ -484,8 +484,8 @@ main {
 .preview a {
   display: inline-block;
   padding: 12px 20px;
-  background: #000;  /* black theme */
-  color: #fff;       /* white text */
+  background: #000;  
+  color: #fff;       
   font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -495,7 +495,6 @@ main {
   transition: all 0.3s ease;
 }
 
-/* Hover effect */
 .preview a:hover {
   background: #fff;
   color: #000;
