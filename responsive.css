@@ -1,124 +1,211 @@
-@media screen and (min-width: 700px) and (max-width: 915px) {
-  .main-dtl {
-    width: auto;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 10px;
-    gap: 20px;
-  }
+/* ============================================
+   Responsive Breakpoints — Mobile First
+   ============================================ */
+
+/* ---- Small Mobile (< 480px) ---- */
+@media (max-width: 480px) {
+    :root {
+        --section-padding: 80px 0;
+    }
+
+    .hero {
+        padding: 100px 20px 60px;
+    }
+
+    .hero-desc {
+        font-size: 0.95rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 36px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .connect-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .connect-card {
+        padding: 24px 16px;
+    }
+
+    .connect-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .connect-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .terminal-body {
+        font-size: 0.78rem;
+        padding: 16px;
+    }
 }
 
-@media screen and (max-width: 700px) {
-  .main-dtl {
-    width: auto;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 10px;
-    flex-direction: column-reverse;
-    margin-bottom: 20px;
-    gap: 40px;
-  }
-  .left-dtl {
-    width: auto;
-    padding: 10px 10px;
-  }
-  .aboutme {
-    width: 95%;
-  }
-  .contact-div {
-    width: 80%;
-  }
+/* ---- Mobile (481px – 768px) ---- */
+@media (min-width: 481px) and (max-width: 768px) {
+    :root {
+        --section-padding: 90px 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .connect-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-@media screen and (min-width: 650px) {
-  .hmbgr-cont {
-    display: none;
-  }
+/* ---- Hide desktop nav, show hamburger on mobile ---- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-inner {
+        height: 64px;
+    }
+
+    .connect-subtitle {
+        margin-top: -28px;
+        margin-bottom: 32px;
+        font-size: 0.95rem;
+    }
+
+    .project-filters {
+        margin-bottom: 28px;
+    }
+
+    .filter-btn {
+        font-size: 0.75rem;
+        padding: 6px 14px;
+    }
+
+    .card-content {
+        padding: 22px;
+    }
+
+    .card-title {
+        font-size: 1.05rem;
+    }
+
+    .card-desc {
+        font-size: 0.85rem;
+    }
 }
 
-@media screen and (max-width: 650px) {
-  .rr1 {
-    display: none;
-  }
-  .hmbgr {
-    display: block;
-  }
-  .ambcnt {
-    margin: 20px 0px;
-  }
-  .abnm {
-    margin: 10px 0px;
-  }
-  .contact-div {
-    width: 90%;
-    padding: 50px 30px;
-  }
+/* ---- Tablet (769px – 1024px) ---- */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .connect-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
-@media screen and (max-width: 390px) {
-  .name {
-    font-size: x-large;
-    text-align: center;
-  }
-  .mlr {
-    margin: 0px 35px;
-  }
-  .mllr {
-    margin: 0px 20px;
-  }
-  .contact-div {
-    width: 95%;
-    padding: 50px 20px;
-  }
-  .u-cnt {
-    flex-direction: column;
-  }
-  .lr-cnt,
-  .rr-cnt {
-    width: 95%;
-  }
-}
-
-@media (min-width: 768px) {
-  .l2-cont {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .l2-cont {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-  .self {
-    flex-direction: row;
-    align-items: start;
-    box-shadow: 0px 0px 10px 2px #ffffff;
-    border-radius: 10px;
-    margin: 10px auto;
-  }
-
-  .project {
-    width: 400px;
-  }
-}
-
+/* ---- Desktop (> 1024px) ---- */
 @media (min-width: 1025px) {
-  .project-cnt {
-    width: 80%;
-  }
-  .self {
-    flex-direction: row;
-    align-items: start;
-    box-shadow: 0px 0px 10px 2px #ffffff;
-    border-radius: 10px;
-    margin: 15px auto;
-  }
-  .project {
-    width: 500px;
-  }
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .connect-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ---- Large desktop (> 1400px) ---- */
+@media (min-width: 1400px) {
+    :root {
+        --container-width: 1200px;
+    }
+}
+
+/* ---- Reduce motion for accessibility ---- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+
+    .gradient-text {
+        animation: none;
+    }
+
+    .cursor-blink {
+        animation: none;
+    }
+
+    .wheel {
+        animation: none;
+    }
 }

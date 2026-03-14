@@ -1,68 +1,114 @@
-.left-dtl h3 {
-  position: relative;
-  animation: slideInBack 1s ease forwards;
-}
-.name {
-  position: relative;
-  animation: slideIn 1s ease forwards;
-}
-.welc {
-  position: relative;
-  animation: slideIn 1s ease forwards;
-}
-.b-to-top {
-  position: relative;
-  animation: slideInUp 1s ease forwards;
-}
-.b-to-down {
-  position: relative;
-  animation: slideInDown 1s ease forwards;
-}
-.left-dtl:nth-child(1),
-.imgha {
-  position: relative;
-  animation: slideInDown 1s ease forwards;
-}
-@keyframes slideIn {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 0;
-  }
+/* ============================================
+   Animations & Keyframes
+   ============================================ */
+
+/* Gradient text flow */
+@keyframes gradientFlow {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
 }
 
-@keyframes slideInBack {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: 0;
-  }
+/* Cursor blink */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
-@keyframes slideInUp {
-  0% {
-    top: 100%;
-  }
-  100% {
-    top: 0;
-  }
+/* Scroll wheel indicator */
+@keyframes scrollWheel {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(14px);
+    }
 }
-@keyframes slideInDown {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 0;
-  }
-}
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0%);
-  }
 
-  100% {
-    transform: translateX(-100%);
-  }
+/* Floating particles subtle pulse */
+@keyframes particlePulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.8; }
+}
+
+/* Glow pulse for cards on hover */
+@keyframes glowPulse {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(139, 92, 246, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 35px rgba(139, 92, 246, 0.2);
+    }
+}
+
+/* Subtle float for hero elements */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Fade in up — base entrance */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade in scale */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Shimmer effect for card borders */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Rotating gradient border */
+@keyframes rotateBorder {
+    0% { --angle: 0deg; }
+    100% { --angle: 360deg; }
+}
+
+/* Skill tag entrance */
+@keyframes tagPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(10px);
+    }
+    60% {
+        transform: scale(1.02) translateY(-2px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Terminal typing cursor */
+@keyframes terminalCursor {
+    0%, 50% { border-right-color: var(--accent-primary); }
+    51%, 100% { border-right-color: transparent; }
 }

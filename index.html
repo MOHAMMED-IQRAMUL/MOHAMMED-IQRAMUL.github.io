@@ -7,531 +7,568 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-12PPYQV69C');
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IQRAMUL</title>
+    <meta name="description" content="Mohammed Iqramul — Software Engineer & Full Stack Web Developer. Building modern, scalable web applications with React, Next.js, Node.js, and more.">
+    <title>IQRAMUL — Software Engineer</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="set.css">
-    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="animations.css">
-
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
 
-    <div class="preview">
-  <a href="https://mohammed-iqramul.github.io/Portfolio_V2/" rel="noopener" target="_blank">
-    Preview New Site
-  </a>
-</div>
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
 
-    <nav>
-        <div class="ll1 welc" id="top">WELCOME</div>
-        <div class="rr1">
-            <ul>
-                <li><a href="#Abm234" class="smooth-scroll   b-to-top">About Me</a></li>
-
-                <li><a href="#prj" class="smooth-scroll b-to-top">Projects</a></li>
-                <li><a href="#contact" class="smooth-scroll b-to-down">Contact Me</a> </li>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo smooth-scroll">
+                <span class="logo-bracket">&lt;</span>IQRAMUL<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link smooth-scroll">About</a></li>
+                <li><a href="#skills" class="nav-link smooth-scroll">Skills</a></li>
+                <li><a href="#projects" class="nav-link smooth-scroll">Projects</a></li>
+                <li><a href="#connect" class="nav-link smooth-scroll">Connect</a></li>
             </ul>
-        </div>
-
-        <div class="hmbgr">
-            <div class="img1">
-                <img class="hmImg" src="assets/hambj-horiz.avif" alt="">
-            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </nav>
 
-    <div class="hmbgr-cont">
-        <ul>
-            <li><a href="#Abm234" class="smooth-scroll">About Me</a></li>
-            <li><a href="#prj" class="smooth-scroll">Projects</a></li>
-            <li><a href="#contact" class="smooth-scroll">Contact Me</a> </li>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-links">
+            <li><a href="#about" class="mobile-link smooth-scroll">About</a></li>
+            <li><a href="#skills" class="mobile-link smooth-scroll">Skills</a></li>
+            <li><a href="#projects" class="mobile-link smooth-scroll">Projects</a></li>
+            <li><a href="#connect" class="mobile-link smooth-scroll">Connect</a></li>
         </ul>
     </div>
 
-    <hr>
-
     <main>
-
-        <div class="cnt">
-
-            <div class="main-dtl">
-                <div class="left-dtl">
-
-                    <h3>Hello 👋🏻, </h3>
-                    <h3>I'm </h3>
-                    <h1 class="name">MOHAMMED IQRAMUL</h1>
-                    <h3>Software Engineer</h3>
-                    <h4 class="and">and a </h4>
-                    <h3>Passionate Full Stack Web Developer</h3>
-
-                </div>
-                <img class="right-dtl" src="assets/img-prf1.jpg" alt="">
-            </div>
-
-            <div class="aboutme">
-                <div class="abnm">
-                    <p class="qwe" id="Abm234">About <span class="mee">Me</span></p>
-                    <div class="ambcnt">
-                        <div class="p112">
-                            <h3>👋 Hey there!</h3>
-                        </div>
-                        <div class="p2223 ul1 mlr">
-                            <p>I'm <strong>Mohammed Iqramul</strong>, a passionate Final year B.Tech Computer
-                                Science student at Galgotias University.</p>
-                            <p>Aspiring <strong>Software Engineer</strong> with a strong interest in <strong>Web
-                                    Development</strong> and solid experience in building full-stack applications.</p>
-
-                        </div>
-                        <div class="p33">
-                            <h3>
-                                🔨 Technical Proficiency.
-                            </h3>
-                        </div>
-                        <div class="p44 mllr ul1">
-                            <p>I’ve worked with a variety of tools and technologies, including:</p>
-                            <ul>
-                                <li><strong>Languages:</strong> C, C++, Java, Python, JavaScript, DSA</li>
-                                <li><strong>Databases:</strong> MySQL, Oracle, MongoDB</li>
-
-                                <li><strong>Concepts:</strong> DSA, OS, CN, SD, STEM</li>
-
-
-                            </ul>
-                        </div>
-
-                        <div class="p66">
-                            <h3>🚀 MAJOR SKILL</h3>
-                        </div>
-                        <div class="p77 mllr ul1 ">
-                            <h4>Full-Stack Web Development</h4>
-                            <ul>
-                                <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React, Tailwind CSS, Material UI
-                                </li>
-                                <li><strong>Backend:</strong> Node.js, Express.js, Next.js</li>
-                                <li><strong>Authentication:</strong> Firebase, Clerk</li>
-                                <li><strong>Database:</strong> MongoDB, Mongoose, Firebase</li>
-                                <li><strong>Tools:</strong> Git, GitHub, Postman</li>
-                                <li><strong>Deployment:</strong> Netlify, Vercel, Rerender</li>
-                            </ul>
-                        </div>
-                    </div>
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <p class="hero-greeting reveal">Hello, I'm</p>
+                <h1 class="hero-name reveal">
+                    <span class="gradient-text">MOHAMMED IQRAMUL</span>
+                </h1>
+                <h2 class="hero-title reveal">
+                    <span class="typing-text" id="typingText"></span><span class="cursor-blink">|</span>
+                </h2>
+                <p class="hero-desc reveal">Building modern, scalable web applications with passion and precision.</p>
+                <div class="hero-cta reveal">
+                    <a href="#projects" class="btn btn-primary smooth-scroll">View Projects</a>
+                    <a href="#connect" class="btn btn-outline smooth-scroll">Let's Connect</a>
                 </div>
             </div>
-        </div>
-
-
-
-
-
-        <div id="prj" class="prj Projects">
-
-            <div class="project-name">Projects</div>
-
-            <div class="project-cnt">
-
-                <div class="topic">MERN + NextJS </div>
-
-                <div class="self">
-                    <div class="project Calender">
-                        <h3 class="hd">Calender Project</h3>
-                        <h3>A simple and dynamic calendar created using HTML, CSS, and JavaScript.</h3>
-                        <h4>Overview</h4>
-                        <p>
-                            This project showcases a dynamic calendar that allows users to Access the Calender.
-                        </p>
-                        <h4>Features</h4>
-                        <ul>
-
-                            <li>Dynamic</li>
-                            <li>Responsive</li>
-                            <li>User Friendly</li>
-                        </ul>
-
-                        <a href="https://github.com/MOHAMMED-IQRAMUL/CALENDER">GitHub Repo</a>
-                        <a href="https://calender-iqramul.netlify.app/" target="_blank" rel="noopener">Live Demo</a>
-                    </div>
-                    <div class="project Todo">
-                        <h3 class="hd">React TodoList App</h3>
-                        <h3>React TodoList application using React, Tailwind CSS, and React Icons.</h3>
-                        <h4>Overview</h4>
-                        <p>
-                            This project showcases a simple React Todolist app which can be used as Notepad.
-                        </p>
-                        <h4>Features</h4>
-                        <ul>
-
-                            <li>Simple TodoList App</li>
-                            <li>Responsive</li>
-                            <li>Managing List with Local Storage</li>
-                        </ul>
-                        <a href="https://github.com/MOHAMMED-IQRAMUL/TODO-APP">GitHub Repo</a>
-                        <a href="https://iq-task.netlify.app/" target="_blank" rel="noopener">Live Demo</a>
-                    </div>
-
-
-                    <div class="project VidyarthiGram">
-                        <h3 class="hd">EduTech Web App</h3>
-                        <h3>NextJs, Material UI, Tailwind CSS, OpenAI, Clerk</h3>
-                        <h4>Overview</h4>
-                        <p>
-                            Building Bridge of Education
-                        </p>
-                        <h4>Features</h4>
-                        <ul>
-
-                            <li>Note Summarizer</li>
-                            <li>Understanding and Evaluation</li>
-                            <li>Centralized Dashboard</li>
-                            <li>AI-Powered Chat Assistant</li>
-                        </ul>
-                        <a href="https://github.com/MOHAMMED-IQRAMUL/VidyarthiGram">GitHub Repo</a>
-                        <a href="https://vidyarthigram.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
-                    </div>
-
-
-                    <div class="project ChatAPP">
-                        <h3 class="hd">Full Stack Realtime Chat App</h3>
-                        <h3>React, Zustand, Axios, Socket.IO Client, DaisyUI, bcryptjs, cloudinary, cookie-parser,
-                            express, jsonwebtoken, mongoose</h3>
-                        <h4>Overview</h4>
-                        <p>
-                            This application is designed for seamless real-time communicatio </p>
-                        <h4>Features</h4>
-                        <ul>
-
-                            <li>Real-Time Messaging</li>
-                            <li>Authentication & Authorization</li>
-                            <li>Modern Tech Stack</li>
-
-                        </ul>
-                        <a href="https://github.com/MOHAMMED-IQRAMUL/ChatApp">GitHub Repo</a>
-                        <a href="https://chatapp-9kwj.onrender.com/" target="_blank" rel="noopener">Live Demo</a>
-                    </div>
-
-                    <div class="project NotesAPP">
-                        <h3 class="hd">NotesApp</h3>
-                        <h3>React, Redux Toolkit, React Router, Tailwind CSS, Vite</h3>
-                        <h4>Overview</h4>
-                        <p>
-                            Welcome to NotesApp! This is a simple yet powerful note-taking app that stores your
-                            notes in local storage. You can easily add, update, delete, copy, and manage your notes
-                            with undo and redo functionality.
-                        </p>
-                        <h4>Features</h4>
-                        <ul>
-                            <li>Home Page: Add or update notes.</li>
-                            <li>Notes Page: Display all notes.</li>
-                            <li>Specific Note Page: Render specific notes.</li>
-
-                        </ul>
-
-                        <a href="https://github.com/MOHAMMED-IQRAMUL/NotesApp">GitHub Repo</a>
-                        <a href="https://iq-notes.netlify.app/" target="_blank" rel="noopener">Live Demo</a>
-                    </div>
-
-
-                    <div class="project FarmRuler">
-                        <h3 class="hd">FarmRuler (Ongoing)</h3>
-                        <h3>Next.Js, Tailwind CSS, Material UI, Vercel</h3>
-                        <h4>Overview</h4>
-                        <p>
-                            A Simple and Clean UI to Display Weather Conditions In Specific Regions. Create
-                            Personalizes AI bots.Monitor crop health, growth stages, and harvest cycles to optimize
-                            yield.
-                        </p>
-                        <h4>Features</h4>
-                        <ul>
-                            <li>Track Your Crops</li>
-                            <li>Analyze Farm Performance</li>
-                            <li>Weather Forecasts</li>
-                            <li>Manage Your Livestock</li>
-                        </ul>
-
-                        <a href="https://github.com/MOHAMMED-IQRAMUL/FarmRuler">GitHub Repo</a>
-                        <a href="https://farm-ruler.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
-                    </div>
-
-
-
-
-
-
-
-
-                    <div class="project Ongoing">
-                        <h3 class="hd">ONGOING</h3>
-                        <br>
-                        <h3>Mini Expense Tracker</h3>
-                        <ul>
-                            <li>Expense Management (CRUD) </li>
-                            <li>Spending Insights </li>
-                        </ul>
-                        <br>
-                        <h3>AI Mock Interviewer</h3>
-                        <ul>
-                            <li>AI Based Interviewer</li>
-                            <li>Code Based Judgements</li>
-                        </ul>
-                    </div>
-
-
+            <div class="scroll-indicator reveal">
+                <div class="mouse">
+                    <div class="wheel"></div>
                 </div>
-
-                <div class="headstarter-topic topic">
-                    At Headstarter
-
-                </div>
-
-                <div class="headstarter self">
-
-
-                    <div class="project Smart Inventory Management">
-                        <h3>Week-2 Project-2</h3>
-                        <h3 class="hd">Smart Inventory Management</h3>
-                        <h3>Next Js, Clean CRUD app using Firebase </h3>
-                        <h4>Overview</h4>
-                        <p>
-                            This project showcases a Smart Inventory Management
-                            on Which we can add, remove, edit and delete Items.We can also search for recepie based
-                            on item available in our Inventory
-                        </p>
-                        <h4>Features</h4>
-                        <ul>
-
-                            <li>Fast</li>
-                            <li>Responsive</li>
-                            <li>AI Support</li>
-                        </ul>
-
-                        <a href="https://github.com/MOHAMMED-IQRAMUL/Smart-Inventory">GitHub Repo</a>
-                        <a href="https://smart-inventory-six.vercel.app/" target="_blank" rel="noopener">Live
-                            Demo</a>
-                    </div>
-
-                    <div class="project AI Chat Support">
-                        <h3>Week-3 Project-3</h3>
-                        <h3 class="hd">AI Chat Support</h3>
-                        <h3>Simple Chat Bot using Openrouter Lamma-3 model</h3>
-                        <h4>Overview</h4>
-                        <p>
-                            The AI Support Buddy is an AI-powered assistant designed to help users with various
-                            inquiries and tasks
-                        </p>
-                        <h4>Features</h4>
-                        <ul>
-
-                            <li>DYNAMIC</li>
-                            <li>RESPONSIVE</li>
-                            <li>USER FRIENDLY</li>
-                        </ul>
-
-                        <a href="https://github.com/MOHAMMED-IQRAMUL/AI-CHAT-SUPPORT">GitHub Repo</a>
-                        <a href="https://ai-support-buddy.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
-                    </div>
-
-                    <div class="project AI Flashcard Generater">
-                        <h3>Week-4 Project-4</h3>
-                        <h3 class="hd">AI Flashcard Generator</h3>
-                        <h3>Next.js, Firebase, Clerk, Stripe, Material UI</h3>
-                        <h4>Overview</h4>
-                        <p>
-                            FlashLearn is an AI-powered flashcard generation web application that allows users to
-                            create, store, and review flashcards.
-                        </p>
-                        <h4>Features</h4>
-                        <ul>
-
-                            <li>Generate Flashcards</li>
-                            <li>User Authentication</li>
-                            <li>Save and View Flashcards</li>
-                        </ul>
-
-                        <a href="https://github.com/MOHAMMED-IQRAMUL/AI-FLASHCARD-GENERATOR">GitHub Repo</a>
-                        <a href="https://aiflashlearn.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
-
-                    </div>
-
-                    <div class="project AI Rate My Professor ">
-                        <h3>Week-5 Project-5</h3>
-                        <h3 class="hd">AI Rate My Professor </h3>
-                        <h3>Next.js, Firebase, OpenAI, Pinecone, RAG</h3>
-                        <h4>Overview</h4>
-                        <p>
-                            An AI-powered support assistant that leverages a RAG system to help students easily find
-                            and evaluate professors based on their specific needs and preferences.
-                        </p>
-                        <h4>Features</h4>
-                        <ul>
-
-                            <li>AI-Powered Retrieval</li>
-                            <li>Personalized Recommendations</li>
-                            <li>Search for Professors</li>
-                        </ul>
-
-                        <a href="https://github.com/MOHAMMED-IQRAMUL/Rate-My-Professor-Using-RAG">GitHub Repo</a>
-                        <a href="https://professai.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
-
-                    </div>
-
-                </div>
-
+                <span>Scroll Down</span>
             </div>
+        </section>
 
-        </div>
-        <div class="contact" id="contact">
-            <p class="qwe">Contact <span class="mee">Me</span></p>
-
-            <div class="contact-div">
-
-                <div class="l1-cont">
-                    <div class="l1-cont-img"><img src="assets/img-prf1.jpg" alt="Profile-Img"></div>
-                    <h4>MOHAMMED IQRAMUL</h4>
+        <!-- ===== ABOUT ===== -->
+        <section class="section about" id="about">
+            <div class="section-inner">
+                <h2 class="section-title reveal">
+                    <span class="title-accent">01.</span> About Me
+                </h2>
+                <div class="about-grid">
+                    <div class="about-terminal reveal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <span class="terminal-title">about.md</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="term-prompt">$</span> <span class="term-cmd">cat</span> intro.txt</p>
+                            <p class="term-output">Hey there! 👋</p>
+                            <p class="term-output">I'm <strong>Mohammed Iqramul</strong>, a passionate B.Tech Computer Science graduate from Galgotias University.</p>
+                            <br>
+                            <p><span class="term-prompt">$</span> <span class="term-cmd">echo</span> $ROLE</p>
+                            <p class="term-output">Aspiring <strong>Software Engineer</strong> with strong expertise in <strong>Full-Stack Web Development</strong></p>
+                            <br>
+                            <p><span class="term-prompt">$</span> <span class="term-cmd">cat</span> mission.txt</p>
+                            <p class="term-output">Crafting scalable, user-centric applications with clean code and modern technologies.</p>
+                        </div>
+                    </div>
+                    <div class="about-info reveal">
+                        <div class="info-card">
+                            <div class="info-icon">🎯</div>
+                            <h3>Focus</h3>
+                            <p>Full-Stack Web Development with React, Next.js, Node.js, and MongoDB ecosystems</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">⚡</div>
+                            <h3>Approach</h3>
+                            <p>Writing performant, maintainable code with best practices in design patterns and architecture</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">🚀</div>
+                            <h3>Goal</h3>
+                            <p>Building products that solve real problems and deliver exceptional user experiences</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="l2-cont ">
-
-
-                    <div class="l2-urls l2-00 ">
-                        <a href="https://codolio.com/profile/mohammed-iqramul">
-                            <img src="assets/codolio.svg" alt="Codolio">
-
-                        </a>
-                    </div>
-
-                    <div class="l2-urls l2-01 ">
-                        <a href="https://www.linkedin.com/in/mohammed-iqramul/">
-                            <img src="assets/LinkedIn.svg" alt="LinkedIn"></a>
-
-                    </div>
-
-                    <div class="l2-urls l2-02">
-                        <a href="https://github.com/MOHAMMED-IQRAMUL">
-                            <img src="assets/Github.svg" alt="GitHub">
-
-                        </a>
-
-
-                    </div>
-
-                    <div class="l2-urls l2-03">
-                        <a href="https://leetcode.com/MOHAMMED-IQRAMUL/">
-                            <img src="assets/LeetCode.svg" alt="LeetCode">
-
-                        </a>
-                    </div>
-
-                    <div class="l2-urls l2-04">
-                        <a href="https://codeforces.com/profile/MOHAMMED-IQRAMUL">
-                            <img src="assets/codeforces.png" alt="CodeForces">
-
-                        </a>
-                    </div>
-
-                    <div class="l2-urls l2-05">
-                        <a href="https://www.geeksforgeeks.org/user/rapp7o1o">
-                            <img src="assets/gfg.svg" alt="GFG">
-
-                        </a>
-                    </div>
-
-                    <div class="l2-urls l2-06">
-                        <a href="https://www.hackerrank.com/profile/MOHAMMED_IQRAMUL">
-                            <img src="assets/hackerrank.png" alt="HackerRank">
-
-                        </a>
-                    </div>
-
-                    <div class="l2-urls l2-07 hds">
-                        <a href="https://app.theheadstarter.com/profile/mohammed-iqramul">
-                            <img src="assets/headstarter.png" alt="Headstarter">
-
-                        </a>
-                    </div>
-
-                    <div class="l2-urls l2-08">
-                        <a href="">
-                            <img src="assets/gmail.ico" alt="Gmail">
-
-                        </a>
-
-
-                    </div>
-
-
-
-
-                </div>
-
-
-
-
-
             </div>
+        </section>
 
-        </div>
-        <!-- <div class="sec-1234">
-                <div class="scrolling-text divs">
-                    <span class="text-duplicate">
-                        <img src="https://skillicons.dev/icons?i=c,cpp,java,py,kotlin,androidstudio,aws,bash,bootstrap,cloudflare,html,css,js,discord,	django,	docker,	dotnet,	express,	figma,	firebase,	flask,git	,github,githubactions,	gitlab	,gmail	,ai	,instagram,kubernetes,laravel	,linkedin,	linux,md,materialui,matlab,mongodb,	mysql	,netlify,nextjs	,nginx	,nim	,nix,nodejs,notion,npm	,opencv,php	,	postgres,postman,powershell,pycharm,py	,pytorch,react,reactivex,regex,replit	,sass,spring,sqlite	,stackoverflow,svg,tailwind,tensorflow,twitter,ts,ubuntu,vercel,visualstudio,vite,vscode,vue,vuetify,windows,wordpress,
-                        
-                        " /alt="icon"></span>
-                    <span class="text-duplicate">
-                        <img src="https://skillicons.dev/icons?i=c,cpp,java,py,kotlin,androidstudio,aws,bash,bootstrap,cloudflare,html,css,js,discord,	django,	docker,	dotnet,	express,	figma,	firebase,	flask,git	,github,githubactions,	gitlab	,gmail	,ai	,instagram,kubernetes,laravel	,linkedin,	linux,md,materialui,matlab,mongodb,	mysql	,netlify,nextjs	,nginx	,nim	,nix,nodejs,notion,npm	,opencv,php	,	postgres,postman,powershell,pycharm,py	,pytorch,react,reactivex,regex,replit	,sass,spring,sqlite	,stackoverflow,svg,tailwind,tensorflow,twitter,ts,ubuntu,vercel,visualstudio,vite,vscode,vue,vuetify,windows,wordpress,
-                        
-                        " /alt="icon"></span>
-                    <span class="text-duplicate">
-                        <img src="https://skillicons.dev/icons?i=c,cpp,java,py,kotlin,androidstudio,aws,bash,bootstrap,cloudflare,html,css,js,discord,	django,	docker,	dotnet,	express,	figma,	firebase,	flask,git	,github,githubactions,	gitlab	,gmail	,ai	,instagram,kubernetes,laravel	,linkedin,	linux,md,materialui,matlab,mongodb,	mysql	,netlify,nextjs	,nginx	,nim	,nix,nodejs,notion,npm	,opencv,php	,	postgres,postman,powershell,pycharm,py	,pytorch,react,reactivex,regex,replit	,sass,spring,sqlite	,stackoverflow,svg,tailwind,tensorflow,twitter,ts,ubuntu,vercel,visualstudio,vite,vscode,vue,vuetify,windows,wordpress,
-                        
-                        " /alt="icon"></span>
+        <!-- ===== SKILLS ===== -->
+        <section class="section skills" id="skills">
+            <div class="section-inner">
+                <h2 class="section-title reveal">
+                    <span class="title-accent">02.</span> Technical Skills
+                </h2>
+
+                <div class="skills-grid">
+                    <div class="skill-category reveal">
+                        <h3 class="skill-cat-title">Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal">
+                        <h3 class="skill-cat-title">Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">Material UI</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal">
+                        <h3 class="skill-cat-title">Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">Next.js API</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal">
+                        <h3 class="skill-cat-title">Databases</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Oracle</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Mongoose</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal">
+                        <h3 class="skill-cat-title">Auth & Cloud</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Firebase Auth</span>
+                            <span class="skill-tag">Clerk</span>
+                            <span class="skill-tag">Stripe</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal">
+                        <h3 class="skill-cat-title">Tools & Deploy</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">Netlify</span>
+                            <span class="skill-tag">Vercel</span>
+                            <span class="skill-tag">Render</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal">
+                        <h3 class="skill-cat-title">Concepts</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">DSA</span>
+                            <span class="skill-tag">OS</span>
+                            <span class="skill-tag">Computer Networks</span>
+                            <span class="skill-tag">System Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS ===== -->
+        <section class="section projects" id="projects">
+            <div class="section-inner">
+                <h2 class="section-title reveal">
+                    <span class="title-accent">03.</span> Projects
+                </h2>
+
+                <!-- Filter Tabs -->
+                <div class="project-filters reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="mern">MERN / Next.js</button>
+                    <button class="filter-btn" data-filter="headstarter">Headstarter</button>
                 </div>
 
-            </div> -->
+                <div class="projects-grid" id="projectsGrid">
 
-        </div>
+                    <!-- MERN Projects -->
+                    <div class="project-card reveal" data-category="mern">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <span class="card-icon">📅</span>
+                                <div class="card-links">
+                                    <a href="https://github.com/MOHAMMED-IQRAMUL/CALENDER" target="_blank" rel="noopener" aria-label="GitHub">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                    </a>
+                                    <a href="https://calender-iqramul.netlify.app/" target="_blank" rel="noopener" aria-label="Live Demo">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="card-title">Calendar Project</h3>
+                            <p class="card-desc">A simple and dynamic calendar allowing users to access and navigate dates with a clean, responsive interface.</p>
+                            <div class="card-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="project-card reveal" data-category="mern">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <span class="card-icon">✅</span>
+                                <div class="card-links">
+                                    <a href="https://github.com/MOHAMMED-IQRAMUL/TODO-APP" target="_blank" rel="noopener" aria-label="GitHub">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                    </a>
+                                    <a href="https://iq-task.netlify.app/" target="_blank" rel="noopener" aria-label="Live Demo">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="card-title">React TodoList App</h3>
+                            <p class="card-desc">A simple yet powerful todo application with local storage persistence for seamless task management.</p>
+                            <div class="card-tags">
+                                <span>React</span><span>Tailwind CSS</span><span>React Icons</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal" data-category="mern">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <span class="card-icon">🎓</span>
+                                <div class="card-links">
+                                    <a href="https://github.com/MOHAMMED-IQRAMUL/VidyarthiGram" target="_blank" rel="noopener" aria-label="GitHub">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                    </a>
+                                    <a href="https://vidyarthigram.vercel.app/" target="_blank" rel="noopener" aria-label="Live Demo">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="card-title">EduTech Web App</h3>
+                            <p class="card-desc">Building a bridge of education with AI-powered note summarizer, understanding evaluation, and centralized dashboard.</p>
+                            <div class="card-tags">
+                                <span>Next.js</span><span>Material UI</span><span>Tailwind</span><span>OpenAI</span><span>Clerk</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal" data-category="mern">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <span class="card-icon">💬</span>
+                                <div class="card-links">
+                                    <a href="https://github.com/MOHAMMED-IQRAMUL/ChatApp" target="_blank" rel="noopener" aria-label="GitHub">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                    </a>
+                                    <a href="https://chatapp-9kwj.onrender.com/" target="_blank" rel="noopener" aria-label="Live Demo">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="card-title">Full Stack Realtime Chat App</h3>
+                            <p class="card-desc">Seamless real-time communication with authentication, authorization, and a modern tech stack using Socket.IO.</p>
+                            <div class="card-tags">
+                                <span>React</span><span>Zustand</span><span>Socket.IO</span><span>Express</span><span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal" data-category="mern">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <span class="card-icon">📝</span>
+                                <div class="card-links">
+                                    <a href="https://github.com/MOHAMMED-IQRAMUL/NotesApp" target="_blank" rel="noopener" aria-label="GitHub">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                    </a>
+                                    <a href="https://iq-notes.netlify.app/" target="_blank" rel="noopener" aria-label="Live Demo">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="card-title">NotesApp</h3>
+                            <p class="card-desc">A powerful note-taking app with local storage, add/update/delete/copy functionality, and undo/redo support.</p>
+                            <div class="card-tags">
+                                <span>React</span><span>Redux Toolkit</span><span>React Router</span><span>Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal" data-category="mern">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <span class="card-icon">🌾</span>
+                                <div class="card-links">
+                                    <a href="https://github.com/MOHAMMED-IQRAMUL/FarmRuler" target="_blank" rel="noopener" aria-label="GitHub">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                    </a>
+                                    <a href="https://farm-ruler.vercel.app/" target="_blank" rel="noopener" aria-label="Live Demo">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="card-title">FarmRuler</h3>
+                            <p class="card-desc">Smart farming dashboard with weather forecasts, crop tracking, farm performance analytics, and AI-powered bots.</p>
+                            <div class="card-tags">
+                                <span>Next.js</span><span>Tailwind</span><span>Material UI</span><span>Vercel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal" data-category="mern">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <span class="card-icon">🔧</span>
+                            </div>
+                            <h3 class="card-title">Ongoing Projects</h3>
+                            <p class="card-desc"><strong>Mini Expense Tracker</strong> — CRUD-based expense management with spending insights.<br><br><strong>AI Mock Interviewer</strong> — AI-driven interview simulator with code-based judgements.</p>
+                            <div class="card-tags">
+                                <span>In Progress</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Headstarter Projects -->
+                    <div class="project-card reveal" data-category="headstarter">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <span class="card-icon">📦</span>
+                                <span class="card-badge">Week 2</span>
+                                <div class="card-links">
+                                    <a href="https://github.com/MOHAMMED-IQRAMUL/Smart-Inventory" target="_blank" rel="noopener" aria-label="GitHub">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                    </a>
+                                    <a href="https://smart-inventory-six.vercel.app/" target="_blank" rel="noopener" aria-label="Live Demo">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="card-title">Smart Inventory Management</h3>
+                            <p class="card-desc">CRUD inventory system with AI-powered recipe suggestions based on available items using Firebase.</p>
+                            <div class="card-tags">
+                                <span>Next.js</span><span>Firebase</span><span>AI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal" data-category="headstarter">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <span class="card-icon">🤖</span>
+                                <span class="card-badge">Week 3</span>
+                                <div class="card-links">
+                                    <a href="https://github.com/MOHAMMED-IQRAMUL/AI-CHAT-SUPPORT" target="_blank" rel="noopener" aria-label="GitHub">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                    </a>
+                                    <a href="https://ai-support-buddy.vercel.app/" target="_blank" rel="noopener" aria-label="Live Demo">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="card-title">AI Chat Support</h3>
+                            <p class="card-desc">AI-powered assistant using Openrouter Llama-3 model designed to help users with various inquiries and tasks.</p>
+                            <div class="card-tags">
+                                <span>Next.js</span><span>Llama-3</span><span>OpenRouter</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal" data-category="headstarter">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <span class="card-icon">🃏</span>
+                                <span class="card-badge">Week 4</span>
+                                <div class="card-links">
+                                    <a href="https://github.com/MOHAMMED-IQRAMUL/AI-FLASHCARD-GENERATOR" target="_blank" rel="noopener" aria-label="GitHub">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                    </a>
+                                    <a href="https://aiflashlearn.vercel.app/" target="_blank" rel="noopener" aria-label="Live Demo">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="card-title">AI Flashcard Generator</h3>
+                            <p class="card-desc">AI-powered flashcard generation with user authentication, save/review capabilities, and Stripe integration.</p>
+                            <div class="card-tags">
+                                <span>Next.js</span><span>Firebase</span><span>Clerk</span><span>Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal" data-category="headstarter">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <span class="card-icon">⭐</span>
+                                <span class="card-badge">Week 5</span>
+                                <div class="card-links">
+                                    <a href="https://github.com/MOHAMMED-IQRAMUL/Rate-My-Professor-Using-RAG" target="_blank" rel="noopener" aria-label="GitHub">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                    </a>
+                                    <a href="https://professai.vercel.app/" target="_blank" rel="noopener" aria-label="Live Demo">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="card-title">AI Rate My Professor</h3>
+                            <p class="card-desc">AI-powered RAG system providing personalized professor recommendations based on student preferences.</p>
+                            <div class="card-tags">
+                                <span>Next.js</span><span>Firebase</span><span>OpenAI</span><span>Pinecone</span><span>RAG</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONNECT ===== -->
+        <section class="section connect" id="connect">
+            <div class="section-inner">
+                <h2 class="section-title reveal">
+                    <span class="title-accent">04.</span> Let's Connect
+                </h2>
+                <p class="connect-subtitle reveal">Have an interesting project or just want to say hi? Find me on these platforms.</p>
+
+                <div class="connect-grid">
+                    <a href="https://github.com/MOHAMMED-IQRAMUL" target="_blank" rel="noopener" class="connect-card reveal" id="link-github">
+                        <div class="connect-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </div>
+                        <span class="connect-label">GitHub</span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/mohammed-iqramul/" target="_blank" rel="noopener" class="connect-card reveal" id="link-linkedin">
+                        <div class="connect-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </div>
+                        <span class="connect-label">LinkedIn</span>
+                    </a>
+
+                    <a href="https://codolio.com/profile/mohammed-iqramul" target="_blank" rel="noopener" class="connect-card reveal" id="link-codolio">
+                        <div class="connect-icon">
+                            <span class="connect-icon-text">CO</span>
+                        </div>
+                        <span class="connect-label">Codolio</span>
+                    </a>
+
+                    <a href="https://leetcode.com/MOHAMMED-IQRAMUL/" target="_blank" rel="noopener" class="connect-card reveal" id="link-leetcode">
+                        <div class="connect-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+                        </div>
+                        <span class="connect-label">LeetCode</span>
+                    </a>
+
+                    <a href="https://codeforces.com/profile/MOHAMMED-IQRAMUL" target="_blank" rel="noopener" class="connect-card reveal" id="link-codeforces">
+                        <div class="connect-icon">
+                            <span class="connect-icon-text">CF</span>
+                        </div>
+                        <span class="connect-label">CodeForces</span>
+                    </a>
+
+                    <a href="https://www.geeksforgeeks.org/user/rapp7o1o" target="_blank" rel="noopener" class="connect-card reveal" id="link-gfg">
+                        <div class="connect-icon">
+                            <span class="connect-icon-text">GFG</span>
+                        </div>
+                        <span class="connect-label">GeeksforGeeks</span>
+                    </a>
+
+                    <a href="https://www.hackerrank.com/profile/MOHAMMED_IQRAMUL" target="_blank" rel="noopener" class="connect-card reveal" id="link-hackerrank">
+                        <div class="connect-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12S13.287 24 12 24s-9.75-4.886-10.392-6c-.646-1.115-.646-10.885 0-12S10.715 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V6.908h.701a.257.257 0 0 0 .258-.257c0-.142-.116-.258-.258-.258H7.964c-.142 0-.258.116-.258.258 0 .142.116.257.258.257h.701v10.184h-.701a.257.257 0 0 0-.258.258c0 .141.116.257.258.257h2.7c.142 0 .258-.116.258-.257a.257.257 0 0 0-.258-.258h-.701v-5.092h4.074v5.092h-.7a.257.257 0 0 0-.258.258c0 .141.116.257.258.257h2.7c.141 0 .257-.116.257-.257a.257.257 0 0 0-.257-.258h-.701V6.908h.701c.141 0 .257-.115.257-.257 0-.143-.116-.258-.257-.258h-2.7v.406z"/></svg>
+                        </div>
+                        <span class="connect-label">HackerRank</span>
+                    </a>
+
+                    <a href="https://app.theheadstarter.com/profile/mohammed-iqramul" target="_blank" rel="noopener" class="connect-card reveal" id="link-headstarter">
+                        <div class="connect-icon">
+                            <span class="connect-icon-text">HS</span>
+                        </div>
+                        <span class="connect-label">Headstarter</span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
-        <div class="container">
-
-            <div class="footer-section">
-                <h4>Follow Me</h4>
-                <ul class="social-links">
-                    <li><a href="https://github.com/MOHAMMED-IQRAMUL" target="_blank" rel="noopener">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/mohammed-iqramul/" target="_blank"
-                            rel="noopener">LinkedIn</a></li>
-
-                </ul>
+        <div class="footer-inner">
+            <div class="footer-links">
+                <a href="https://github.com/MOHAMMED-IQRAMUL" target="_blank" rel="noopener">GitHub</a>
+                <span class="footer-dot">·</span>
+                <a href="https://www.linkedin.com/in/mohammed-iqramul/" target="_blank" rel="noopener">LinkedIn</a>
+                <span class="footer-dot">·</span>
+                <a href="https://leetcode.com/MOHAMMED-IQRAMUL/" target="_blank" rel="noopener">LeetCode</a>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Mohammed Iqramul. All Rights Reserved.</p>
-        </div>
+            <p class="footer-copy">© 2024 Mohammed Iqramul. All Rights Reserved.</p>
         </div>
     </footer>
-    <button type="button" id="scrollToTopButton" onclick="scrollToTop()"><lord-icon class="ic-up"
-            src="https://cdn.lordicon.com/dwoxxgps.json" trigger="hover" colors="primary:#ffffff">
-        </lord-icon>.</button>
 
-
+    <!-- Scroll to Top -->
+    <button type="button" class="scroll-top" id="scrollToTop" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
 
     <script src="app.js"></script>
-    <script src="scroll.js"></script>
-    <script src="https://cdn.lordicon.com/lordicon.js"></script>
-
 </body>
 
 </html>
